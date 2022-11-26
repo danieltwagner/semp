@@ -53,6 +53,7 @@ class Api {
             } catch (e) {
                 res.status(400);
                 res.json(util.createResponse(400, "Device couldnt be created. " + e))
+                console.log("Device couldn't be created: " + e);
             }
 
         });
